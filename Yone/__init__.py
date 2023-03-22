@@ -53,7 +53,7 @@ if ENV:
     except ValueError:
         raise Exception("Please Add Hash Api key to start the bot")
 
-    DB_URI = os.environ.get("DATABASE_URL")
+    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
     KORA_API_TOKEN = os.environ.get("KORA_API_TOKEN")
     PHOTO = os.environ.get("PHOTO")
     WORKERS = int(os.environ.get("WORKERS", 8))
